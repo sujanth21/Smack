@@ -294,7 +294,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="createAccountBtnPressed:" destination="8mf-cY-X19" eventType="touchUpInside" id="K96-cj-ZIs"/>
+                                    <action selector="createAccountBtnPressed:" destination="8mf-cY-X19" eventType="touchUpInside" id="AHh-9y-GMd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7t-2i-WsL">
@@ -307,6 +307,7 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="pickAvatarBtnPressed:" destination="8mf-cY-X19" eventType="touchUpInside" id="Tu1-G3-OZb"/>
                                     <action selector="signupBtnPressed:" destination="aCr-qh-kWj" eventType="touchUpInside" id="Q1W-no-sal"/>
                                 </connections>
                             </button>
@@ -390,7 +391,6 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="pickAvatarBtnPressed:" destination="8mf-cY-X19" eventType="touchUpInside" id="FBV-Be-ezF"/>
                                     <action selector="signupBtnPressed:" destination="aCr-qh-kWj" eventType="touchUpInside" id="AVN-gg-vlt"/>
                                 </connections>
                             </button>
@@ -417,6 +417,7 @@
                     <connections>
                         <outlet property="emailTxtField" destination="xLA-Aj-i0H" id="Lel-ES-gPj"/>
                         <outlet property="passwordTxtField" destination="t2i-rL-Rzp" id="92V-wN-yzg"/>
+                        <outlet property="pickBGColorBtnPressed" destination="1xv-K5-YMS" id="IbM-a2-iso"/>
                         <outlet property="userImg" destination="bWI-JG-vgV" id="W6x-27-wYe"/>
                         <outlet property="usernameTxtField" destination="SYR-7N-qRR" id="iCh-Jd-O9x"/>
                         <segue destination="cb3-uu-MQP" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="GWq-PY-eAj"/>

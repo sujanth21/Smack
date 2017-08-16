@@ -25,9 +25,20 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func createAccountBtnPressed(_ sender: Any) {
+        
+        guard let email = emailTxtField.text, emailTxtField.text != "" else { return }
+        guard let password = passwordTxtField.text, passwordTxtField.text != "" else { return }
+        
+        AuthService.instance.registerUser(email: email, password: password) { (success) in
+            if success {
+                print("Registered user!")
+            }
+        }
     }
     
     @IBAction func pickAvatarBtnPressed(_ sender: Any) {
     }
+    
+    @IBOutlet weak var pickBGColorBtnPressed: UIButton!
     
 }
